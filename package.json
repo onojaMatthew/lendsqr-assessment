@@ -7,14 +7,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --exec babel-node src/server",
-    "seed": "babel-node src/seed.js",
     "clean": "rimraf 'build'",
     "start": "cd build && node server.js",
-    "create-migration": "cd build && knex migrate:make create_users_and_transactions_tables",
-    "create-seed": "cd build && knex seed:make 01_users && knex seed:make 02_transactions",
     "rollback": "cd build && knex migrate:rollback",
-    "migrate-latest": "cd build && knex migrate:latest",
-    "run-seed": "cd build && knex seed:run",
+    "migrate": "cd build && knex migrate:latest",
+    "seed": "cd build && knex seed:run",
     "build": "yarn clean && babel src --out-dir build",
     "watch": "babel -w src --out-dir build",
     "test": "cd build && mocha --recursive --timeout 10000 --exit"
