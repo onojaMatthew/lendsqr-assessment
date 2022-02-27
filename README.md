@@ -53,9 +53,11 @@ Start Test
     - > `yarn run build`
 * To continuously watch for changes 
     - > `yarn run watch`
+* To roll back migration 
+    - > `yarn run rollback`
 * To run migration 
     - > `yarn run migrate`
-* To create seed
+* To create seed to database
     - > `yarn run seed`
 * To start the development server
     - > `yarn start`

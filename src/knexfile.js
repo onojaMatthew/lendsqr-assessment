@@ -1,6 +1,4 @@
-require("dotenv").config();
-
-// Update with your config settings.
+const key = require("./config/key");
 
 
 /**
@@ -11,10 +9,10 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-      user: process.env.DB_USER,
-      database: process.env.DB_NAME,
-      password: process.env.DB_PASSWORD,
-      host: process.env.DB_HOST,
+      user: key.DB_USER,
+      database: key.DB_NAME,
+      password: key.DB_PASSWORD,
+      host: key.DB_HOST,
     },
     migrations: {
       directory: __dirname + "/db/migrations"
