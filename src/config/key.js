@@ -9,5 +9,9 @@ export default ({
   DB_NAME: process.env.DB_NAME
 });
   
-    
+// SECRET_KEY=someteriuglygibrish
+// DB_NAME=lendsqr
+// DB_HOST=localhost
+// DB_USER=sqluser
+// DB_PASSWORD=password
    

@@ -25,7 +25,7 @@ exports.up = function(knex) {
     table.timestamp("created_at").defaultTo(knex.fn.now());
     table.timestamp("updated_at").defaultTo(knex.fn.now());
     table.string("receiver_name").notNullable();
-    table.string("sender_name").notNullable();
+    table.string("sender_name");
     table.integer("created_by").unsigned().references("id").inTable("users");
   });
 };

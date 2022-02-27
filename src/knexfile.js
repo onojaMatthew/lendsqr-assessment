@@ -21,28 +21,29 @@ module.exports = {
     }
   },
 
-  staging: {
-    client: 'postgresql',
+  test: {
+    client: "mysql",
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
-    },
-    pool: {
-      min: 2,
-      max: 10
+      database: "lendsqr",
+      user:  "sqluser",
+      password: 'password',
+      host: "localhost"
     },
     migrations: {
-      tableName: 'knex_migrations'
+      directory: __dirname + "/db/migrations"
+    },
+    seeds: {
+      directory: __dirname + "/db/seeds"
     }
   },
 
   production: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: "test",
+      user:  "sqluser",
+      password: 'password',
+      host: "production_host"
     },
     pool: {
       min: 2,

@@ -39,13 +39,6 @@ export const validate_fund_withdraw = [
   }
 ]
 
-// "amount": 3000.00, 
-//     "sender_name": "John Doe", 
-//     "receiver_name": "Martinez Lorenzo", 
-//     "narrative": "Payment for furnitures",
-//     "receiver_acct_no": "3415191272", 
-//     "debit_acct_no": "3144716636"
-
 export const validate_fund_transfer = [
   body("amount").isDecimal().withMessage("Amount is required"),
   body("debit_acct_no").isLength({ min: 10, max: 10 }).withMessage("Invalid account number"),
