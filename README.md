@@ -1,13 +1,13 @@
-Bank Transaction (Rest Backend) Concept - Assessment
+Bank Application (Rest Backend) Concept - Assessment
 ===
 
 ## This project assumes that you have MYSQL DATABASE installed locally and running on your system as the project database is configured locally
 ## It also assumes that you have knex installed globally on your machine
 ---
 
-* Pull the assessment solution repo
+* Pull the assessment solution repository
     - > `git clone https://github.com/onojaMatthew/lendsqr-assessment.git`
-* Pull up your favorite console and change to this directory
+* Pull up your favorite console and change into the cloned repository
 * Install the projects dependencies 
     - > `yarn install` or `npm install`
 
@@ -15,7 +15,7 @@ Set up Environment Variables
 ---
 * To declare environment variables for the project
 * Create a `.env` file in the root directory of the project and add the following environment variables
-* To add Database URI connection string (local URI string or cloud database URI string)
+* To add Database URI connection string (local database configuration)
     - > `DB_HOST=localhost`
     - > `DB_USER=your_db_username`
     - > `DB_NAME=your_database_name`
