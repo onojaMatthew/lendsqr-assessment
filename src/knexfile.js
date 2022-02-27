@@ -1,4 +1,7 @@
+require("dotenv").config();
+
 // Update with your config settings.
+
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
@@ -8,10 +11,10 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-      user: "sqluser",
-      database: "lendsqr",
-      password: "password",
-      host: "localhost",
+      user: process.env.DB_USER,
+      database: process.env.DB_NAME,
+      password: process.env.DB_PASSWORD,
+      host: process.env.DB_HOST,
     },
     migrations: {
       directory: __dirname + "/db/migrations"
@@ -24,10 +27,10 @@ module.exports = {
   test: {
     client: "mysql",
     connection: {
-      database: "lendsqr",
-      user:  "sqluser",
-      password: 'password',
-      host: "localhost"
+      user: process.env.DB_USER,
+      database: process.env.DB_NAME,
+      password: process.env.DB_PASSWORD,
+      host: process.env.DB_HOST,
     },
     migrations: {
       directory: __dirname + "/db/migrations"
