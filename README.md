@@ -9,7 +9,7 @@ Bank Application (Rest Backend) Concept - Assessment
     - > `git clone https://github.com/onojaMatthew/lendsqr-assessment.git`
 * Pull up your favorite console and change into the cloned repository
 * Install the projects dependencies 
-    - > `yarn install` or `npm install`
+    - > `yarn install`
 
 Set up Environment Variables
 ---
